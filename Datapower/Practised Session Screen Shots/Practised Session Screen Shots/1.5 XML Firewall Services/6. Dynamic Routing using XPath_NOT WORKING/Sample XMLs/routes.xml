@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+  DP route configuration file.
+  For each service URL, specify the host and port.
+  The sslPP is optional (SSL Proxy Profile).
+  The name is used only for logging.
+  -->
+
+<routes>
+   <service uri="/app1">
+	   <host>app1.acme.com</host>
+		<port>443</port>
+		<name>Endpoint 1 Application</name>
+		<sslPP>AcmePP</sslPP>
+	</service>
+   <service uri="/app1/endpoint2">
+	   <host>app1.acm.com</host>
+		<port>8080</port>
+		<name>Endpoint 2 Application</name>
+	</service>
+
+  <!-- App 2 routes -->
+	<service uri="/app2">
+	   <host>app2.acme.com</host>
+		<port>9080</port>
+		<name>Application 2</name>
+	</service>
+</routes>
