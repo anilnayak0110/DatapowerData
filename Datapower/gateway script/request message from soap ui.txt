@@ -1,0 +1,14 @@
+PFA SampleApp IIB application and MPGW proxy services.
+
+
+Request: for soap ui
+
+
+
+
+<msg>
+<empid>101</empid>
+<fname>atul</fname>
+<lname>gupta</lname>
+<addr>mumbai</addr>
+</msg>
