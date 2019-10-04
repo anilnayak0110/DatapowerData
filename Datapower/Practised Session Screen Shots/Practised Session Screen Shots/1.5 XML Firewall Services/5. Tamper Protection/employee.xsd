@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+xmlns="http://www.someorgname.com"
+	elementFormDefault="qualified">
+	<xs:element name="employees">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="employee" minOccurs="0" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="id" type="xs:integer" />
+							<xs:element name="name" type="xs:string" />
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="product">
+					<xs:complexType>
+						<xs:attribute name="prodid" type="xs:positiveInteger">
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>
